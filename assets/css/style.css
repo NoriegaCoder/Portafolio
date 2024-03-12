@@ -109,7 +109,7 @@ html{
 }
 
 #about {
-    scroll-margin-top: 6rem ;
+    scroll-margin-top: 9rem ;
 }
 /*       hero      */
 
@@ -117,23 +117,9 @@ html{
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 9rem;
+    margin-top: 3rem;
 }
 
-.hero img {
-    display: flex;
-    justify-content: center;
-    border-radius: 50%;
-    max-height: 200px;
-    margin-top: 20%;
-    border: 3px dotted wheat;
-}
-
-.hero p:nth-child(3) {
-    max-width: 300px;
-    padding-left: 2rem;
-    padding-top: 20%;
-    margin-bottom: 80%;
-}
 /*       skills      */
 
 #skills {
@@ -146,17 +132,28 @@ html{
     box-shadow:  20px 20px 60px black, -20px -20px 60px #000814;
     margin-bottom: 9rem;
     border-radius: 15px;
+    transition: 0.25s;
 }
 
 
 .skills-card {
     width: 100%;
-
+    padding: 1rem;
+    
+}
+.skills:hover {
+    scale: 1.1;
+    transition: 0.25s;
 }
 
 .skills-content{
     display: flex;
     justify-content: space-around;
+}
+.skills-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
 }
 /*       projects      */
 
@@ -171,15 +168,21 @@ html{
     gap: 90px; /* Espacio entre las celdas del grid */
     overflow: visible;
     margin-bottom: 9rem;
+
   }
 
 .project-card {
-
+    cursor: pointer;
     border: 1px solid white;
     box-shadow:  20px 20px 60px black, -20px -20px 60px #000814;
-    
+    transition: 0.25s;
     border-radius: 15px;
     padding: 1rem;
+}
+.project-card:hover {
+    scale: 1.1;
+    transition: 0.25s;
+    
 }
 
 .skills-title {
@@ -190,6 +193,7 @@ html{
 .project-img {
     width: 100%;
     border-radius: 8px;
+    
 }
 
 /*       reviews      */
